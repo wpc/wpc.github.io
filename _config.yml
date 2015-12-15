@@ -1,7 +1,7 @@
 # Site settings
-title: Paper Theme
+title: WPC
 description: > # this means to ignore newlines until "baseurl:"
-  A gentle theme for Jekyll utilising material design.
+  WPC's random thoughts
 baseurl: "/" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site you most probably don't need to set it
 
@@ -17,12 +17,12 @@ disqus: # add disqus shortname here
 
 # author info
 # add your appropriate info here
-author: # your name
+author: wpc
 bio:    # your bio
 email:
-email_md5: # md5 hash of your email
-twitter_username:
-github_username:
+email_md5: 37656d002b54dcf1e593e044d6b46d81
+twitter_username: alex_hal9000
+github_username: wpc
 
 # Theming options
 # These settings are mandatory.
