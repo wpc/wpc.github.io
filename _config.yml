@@ -1,12 +1,16 @@
 # Site settings
 title: WPC
 description: > # this means to ignore newlines until "baseurl:"
-  WPC's random thoughts
+  Blog site of WPC
 baseurl: "/" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site you most probably don't need to set it
 
+
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+
 paginate: 5 # pagination based on number of posts
 paginate_path: "page/:num"
 highlighter: pygments
@@ -26,7 +30,7 @@ github_username: wpc
 
 # Theming options
 # These settings are mandatory.
-theme:              'blue-pink'
+theme:              'deep_orange-blue'
 # drawer theming
 drawer:
   text_color:       'grey-600'
