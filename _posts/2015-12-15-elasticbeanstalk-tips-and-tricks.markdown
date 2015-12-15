@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ElasticBeanstalk Tips and Tricks"
-date:   2015-09-12 19:23:19
+date:   2015-12-15 12:00:00
 categories: AWS
 ---
 This page includes a list of tips and tricks for new Elastic Beanstalk users. They are not [eb_deployer](https://github.com/ThoughtWorksStudios/eb_deployer) specific, but mostly has a straightforward implementation in [eb_deployer](https://github.com/ThoughtWorksStudios/eb_deployer).
