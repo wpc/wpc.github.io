@@ -25,8 +25,21 @@
       }
 
       h2 {
-        color: #fff;
+        color: #aaa;
         text-align: center;
+      }
+
+      #credit {
+        color: #aaa;
+        text-align: right;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        width: 100%;
+      }
+
+      #credit a {
+        color: #aaa;
       }
 
     </style>
@@ -36,6 +49,7 @@
   <body>
     <div id="canvas"></div>
     <h2>Click or touch anywhere to reset</h2>
+    <div id="credit">by <a href="http://wpc.github.com">WPC</a></div>
     <script src="{{ 'scripts/pechakucha-timer.js' | prepend: site.baseurl | prepend: site.url}}"></script>
   </body>
 
