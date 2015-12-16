@@ -2,28 +2,35 @@
 
 (function() {
 
-    var start = new Date().getTime();
-    var tickTimeout = null;
+  var start = new Date().getTime();
+  var tickTimeout = null;
 
-    var formatNumTh = function(num) {
-      switch (10 <= num && num <= 19 ? 10 : num % 10) {
-      case 1: num += "st"; break;
-      case 2: num += "nd"; break;
-      case 3: num += "rd"; break;
-      default: num += "th"; break;
-      }
-      return num;
+  var formatNumTh = function(num) {
+    switch (10 <= num && num <= 19 ? 10 : num % 10) {
+    case 1: num += "st"; break;
+    case 2: num += "nd"; break;
+    case 3: num += "rd"; break;
+    default: num += "th"; break;
     }
+    return num;
+  }
 
-    var color = d3.scale.linear()
-      .range(["hsl(-180,60%,50%)", "hsl(180,60%,50%)"])
-      .interpolate(function(a, b) { var i = d3.interpolateString(a, b); return function(t) { return d3.hsl(i(t)); }; });
+  var color = d3.scale.linear()
+    .range(["hsl(-180,60%,50%)", "hsl(180,60%,50%)"])
+    .interpolate(function(a, b) { var i = d3.interpolateString(a, b); return function(t) { return d3.hsl(i(t)); }; });
+
+
+  var reset = function() {
+    start = new Date().getTime();
+  };
+
+  reset();
 
   var render = function() {
     var canvas = document.getElementById("canvas");
     var width = canvas.offsetWidth,
     height = canvas.offsetHeight,
-    radius = Math.min(width, height) / 1.1,
+    radius = Math.min(width, height) / 1.2,
     spacing = .09;
 
     var arcBody = d3.svg.arc()
@@ -130,8 +137,7 @@
 
   window.onresize = render;
   render();
+  document.addEventListener("click", reset, false);
+  document.addEventListener("touchend", reset, false);
 
-  document.onclick = function() {
-    start = new Date().getTime();
-  };
 })();
