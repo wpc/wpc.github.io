@@ -17,7 +17,7 @@ highlighter: pygments
 gems: [jekyll-paginate]
 
 # comments
-disqus: # add disqus shortname here
+disqus: wpcblogs
 
 # author info
 # add your appropriate info here
