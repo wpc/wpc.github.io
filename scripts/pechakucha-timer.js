@@ -23,7 +23,7 @@
     var canvas = document.getElementById("canvas");
     var width = canvas.offsetWidth,
     height = canvas.offsetHeight,
-    radius = Math.min(width, height) / 1.5,
+    radius = Math.min(width, height) / 1.1,
     spacing = .09;
 
     var arcBody = d3.svg.arc()
