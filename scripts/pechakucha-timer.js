@@ -130,7 +130,7 @@
       var thSlides = Math.floor(elapsed / 20);
       return [
         {index: .3, text: Math.floor(seconds) + " seconds", value: seconds / 20 },
-        {index: .1, text: formatNumTh(thSlides) + " slides", value: thSlides / 20}
+        {index: .1, text: formatNumTh(thSlides) + " slide", value: thSlides / 20}
       ];
     }
   };
