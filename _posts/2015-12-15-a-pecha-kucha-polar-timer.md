@@ -8,7 +8,7 @@ categories: presentation visualization
 
 Today I attened a [Pecha Kucha](http://www.pechakucha.org/) event. Pecha Kucha is a presentation style that you go through 20 slides, each for 20 seconds. I feel it is pretty challenging to make timing right. So I borrowed some code from the [d3 polar clock](http://bl.ocks.org/mbostock/1096355) made a timer for myself. This timer works great on the phone.
 
-The link is here: [wpc.github.io/pechakucha-timer.html](http://wpc.github.io/pechakucha-timer.html).
+Here is the timer: [wpc.github.io/pechakucha-timer.html](http://wpc.github.io/pechakucha-timer.html).
 
 And the javascript code is here: [https://github.com/wpc/wpc.github.io/blob/master/scripts/pechakucha-timer.js](https://github.com/wpc/wpc.github.io/blob/master/scripts/pechakucha-timer.js)
 
