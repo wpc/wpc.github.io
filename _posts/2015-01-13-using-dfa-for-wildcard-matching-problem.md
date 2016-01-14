@@ -25,7 +25,7 @@ It is a interesting algorithm problem not as simple as it looked like. Because `
 Start with a naive implementation
 ====
 
-I happened to solve this problem on [leetcode](https://leetcode.com/problems/wildcard-matching/) long time ago. At the time I wrote a naive implementation based on recursive backtracking. Once encounter a `"*"`,  the algorithm scan from back of the text, and try recursively find a match for rest of the patten. This algorithm can handle greedy cases like `(“abcbb”, “a*bc”)` correctly, but yield very high time complexity. If text length is **n**, and pattern length is **m**, the worst case complexity is **O(n`*`m!)**. So the algorithm never finish when text is long and pattern has a lot of stars, such as:
+I happened to solve this problem on [leetcode](https://leetcode.com/problems/wildcard-matching/) long time ago. At the time I wrote a naive implementation based on recursive backtracking. Once encounter a `"*"`,  the algorithm scan from back of the text, and try recursively find a match for rest of the patten. This algorithm can handle greedy cases like `(“abcbb”, “a*bc”)` correctly, but yield very high time complexity. If text length is **n**, and pattern length is **m**, the worst case complexity is **O(n!`*`m)**. So the algorithm never finish when text is long and pattern has a lot of stars, such as:
 
 {% highlight yaml %}
 
@@ -35,12 +35,12 @@ text: "aabbbbaababbabababaabbbbabbabbaabbbabbbabaabbaaaababababbababbabbbbabaaab
 {% endhighlight %}
 
 
-At the time I ended up with putting a cache for failures matches. It helps shortcut the **m!** part and reduce the worst case complexity to **O(n`*`m)**. Good enough for me to move on.
+At the time I ended up with putting a cache for failures matches. It helped shortcut the factorial part and reduce the worst case complexity to **O(n`*`m)**. Good enough for me to move on.
 
 Lucene's implementation
 ====
 
-But this obviously is not good enough for production code. I was wondering what is Lucene’s implementation looked like. So I download source code of Lucene 3.6.2. (v3.6.2 is the version of Lucene that Neo4j embedded). I was shockingly surprised the implementation is almost identical to my first naive implementation. It does not even have the failure caches so it is a straight worst case **O(n`*`m!)** algorithm. I guess this means if you find some server software using Lucene 3 and you can make a wildcard query, you can easily DOS it using previous mentioned cases.
+But this obviously is not good enough for production code. I was wondering what is Lucene’s implementation looked like. So I download source code of Lucene 3.6.2. (v3.6.2 is the version of Lucene that Neo4j embedded). I was shockingly surprised the implementation is almost identical to my first naive implementation. It does not even have the failure caches so it is a straight worst case **O(n!`*`m)** algorithm. I guess this means if you find some server software using Lucene 3 and you can make a wildcard query, you can easily DOS it using previous mentioned cases.
 
 (I have already check latest version of Lucene. Turns out from version 4.0, Lucene switched to a DFA solution. So there is no need to race for a pull request :-).
 
