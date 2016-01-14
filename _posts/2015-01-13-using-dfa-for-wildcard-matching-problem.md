@@ -5,9 +5,6 @@ date:   2016-01-13 14:00:00
 categories: algorithm
 ---
 
-Wildcard matching problem
-=====
-
 Wildcard matching has a very simple matching language: use “?” to match any single character and “*” for matching any text (include empty). It is not as powerful as regular expression, but on the other side it is much more understandable for the end user. Some examples:
 
 | text | pattern | matchs |
