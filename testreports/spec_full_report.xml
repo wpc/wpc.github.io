@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<testsuite errors="0" failures="0" skipped="0" tests="636" time="183.976" timestamp="2016-02-12T11:17:54+05:30">
+  <properties />
+  <testcase classname="./spec/controllers/pipelines_controller_view_spec.rb" name="PipelinesController show_for_trigger should render trigger with options with pegged revisions" time="19.547" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController index should return a 404 HTTP response when stage cannot be loaded" time="0.097" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController index should load stage data" time="0.227" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController index should return a 404 HTTP response when id is not a number" time="0.022" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController instance_by_counter should render instance json" time="0.248" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController instance_by_counter should render error correctly" time="0.025" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController instance_by_counter should route to history" time="0.235" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController cancel should cancel stage" time="0.018" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController cancel should resolve route to cancel" time="0.009" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController cancel_stage_using_pipeline_stage_name should cancel stage" time="0.019" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController cancel_stage_using_pipeline_stage_name should resolve route to cancel_stage_using_pipeline_stage_name" time="0.01" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController history should render history json" time="0.193" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController history should render error correctly" time="0.027" />
+  <testcase classname="./spec/controllers/api/stages_controller_spec.rb" name="Api::StagesController history should route to history" time="0.013" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController history security should disallow anonymous users, with security enabled" time="0.066" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController history security should allow normal users who have access to pipeline, with security enabled" time="0.035" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController history security should disallow normal users who do not have access to pipeline, with security enabled" time="0.024" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController history security should allow anyone, with security disabled" time="0.02" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController history security logged in should get stage instance json" time="0.293" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController show security should disallow anonymous users, with security enabled" time="0.035" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController show security should allow normal users who have access to pipeline, with security enabled" time="0.04" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController show security should disallow normal users who do not have access to pipeline, with security enabled" time="0.028" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController show security should allow anyone, with security disabled" time="0.02" />
+  <testcase classname="./spec/controllers/api_v1/stages_controller_spec.rb" name="ApiV1::StagesController show security logged in should get stage instance json" time="0.057" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise should convert from full blown document to PipelineConfig" time="0.126" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise should render errors" time="0.015" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise should render errors on nested objects" time="0.051" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise should convert from minimal json to PipelineConfig" time="0.012" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_environment_varibales should convert pipeline hash with empty environment variables  to PipelineConfig" time="0.006" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_environment_varibales should convert pipeline hash with environment variables  to PipelineConfig" time="0.005" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_timer should convert pipeline hash with timer  to PipelineConfig" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_tracking_tool should raise exception when passing invalid tracking tool type" time="0.055" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_tracking_tool should convert pipeline hash with tracking tool  to PipelineConfig" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_parmas should convert pipeline hash with empty parmas to PipelineConfig" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_parmas should convert pipeline hash with parameters to PipelineConfig" time="0.008" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_materials should convert pipeline hash with empty materials  to PipelineConfig" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_materials should raise exception when passing invalid material type" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_materials should convert pipeline hash with materials  to PipelineConfig" time="0.011" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_stages should convert pipeline hash with empty stages  to PipelineConfig" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter deserialise pipeline_with_stages should convert pipeline hash with stages  to PipelineConfig" time="0.009" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter serialize should serialize pipeline with template" time="0.014" />
+  <testcase classname="./spec/presenters/api_v1/config/pipeline_config_representer_spec.rb" name="ApiV1::Config::PipelineConfigRepresenter serialize renders a pipeline with hal representation" time="0.073" />
+  <testcase classname="./spec/views/admin/tasks/plugin/new_html_spec.rb" name="admin/tasks/plugin/new.html.erb should render what the rendering service returns" time="1.899" />
+  <testcase classname="./spec/views/admin/tasks/plugin/new_html_spec.rb" name="admin/tasks/plugin/new.html.erb should render the oncancel" time="1.631" />
+  <testcase classname="./spec/views/admin/tasks/plugin/new_html_spec.rb" name="admin/tasks/plugin/new.html.erb should render the config md5, form buttons and flash message" time="1.628" />
+  <testcase classname="./spec/views/admin/tasks/plugin/new_html_spec.rb" name="admin/tasks/plugin/new.html.erb should render the config conflict message" time="1.592" />
+  <testcase classname="./spec/views/admin/tasks/plugin/new_html_spec.rb" name="admin/tasks/plugin/new.html.erb should render the required message" time="1.634" />
+  <testcase classname="./spec/views/admin/users/roles_html_spec.rb" name="/admin/users/roles.html.erb should render go-sys-adm checkbox" time="0.151" />
+  <testcase classname="./spec/views/admin/users/roles_html_spec.rb" name="/admin/users/roles.html.erb should render roles checkboxes" time="0.253" />
+  <testcase classname="./spec/views/admin/users/roles_html_spec.rb" name="/admin/users/roles.html.erb should render tristate-checkbox disabled when go-sys-adm checkbox is disabled" time="0.134" />
+  <testcase classname="./spec/views/admin/package_definitions/new_for_new_pipeline_wizard_html_spec.rb" name="admin/package_definitions/new_for_new_pipeline_wizard.html.erb should render new pkg def page" time="0.566" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController content should return params for content" time="0.011" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController content should respond with error if the pipeline name is empty" time="0.025" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController content should return the pipeline gadget content" time="0.011" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController content should return the pipeline model by pipeline name" time="0.044" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController content should respond with not found if the pipeline name is not found" time="0.019" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController content should respond with error if the pipeline name is nil" time="0.018" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController content should respond with unauthorised if the user does not view permission on the pipeline" time="0.027" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController index should resolve" time="0.009" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController index should set the page expiration to 1 day" time="0.026" />
+  <testcase classname="./spec/controllers/gadgets/pipeline_controller_spec.rb" name="Gadgets::PipelineController index should have return the pipeline gadget" time="0.009" />
+  <testcase classname="./spec/presenters/api_v1/user_representer_spec.rb" name="ApiV1::UserRepresenter renders a user" time="0.011" />
+  <testcase classname="./spec/views/agent_details/show_html_spec.rb" name="/agent_details/show.html.erb details should show message when there are no resources or environments for an agent" time="0.049" />
+  <testcase classname="./spec/views/agent_details/show_html_spec.rb" name="/agent_details/show.html.erb details should show agent details" time="0.072" />
+  <testcase classname="./spec/views/agent_details/show_html_spec.rb" name="/agent_details/show.html.erb tabs should not have job history tab when user is not an admin" time="0.02" />
+  <testcase classname="./spec/views/agent_details/show_html_spec.rb" name="/agent_details/show.html.erb tabs should have details and job history tabs" time="0.036" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController routes should resolve_the_route_for_upload" time="0.007" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController routes should resolve_the_route_for_get plugin settings" time="0.006" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController routes should resolve_the_route_for_update plugin settings" time="0.006" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController routes should resolve the route_for_index" time="0.004" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController update_settings should redirect to plugin listing on success" time="0.031" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController update_settings should render settings template with required data on error" time="0.038" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController upload should show success message when upload is successful" time="0.022" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController upload should refuse to upload when feature is turned off" time="0.014" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController upload should show error message when upload is unsuccessful" time="0.02" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController upload should show error message when no file is selected" time="0.016" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController upload should redirect to #index" time="0.017" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController index should populate the tab name" time="0.881" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController index should populate the feature toggle flag for upload plugin" time="0.029" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController index should populate the current list of plugins and the external plugins path" time="0.043" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController index should populate the current list of plugins in case insensitive alphabetical order when plugin names are given" time="0.028" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController index should populate the current list of plugins in case insensitive alphabetical order when plugin names are not given" time="0.03" />
+  <testcase classname="./spec/controllers/admin/plugins/plugins_controller_spec.rb" name="Admin::Plugins::PluginsController edit_settings should render settings template with required data" time="0.022" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_log_debugging_message_when_debugging" time="0.006" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_log_warn_level_message_for_unknown" time="0.001" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_be_able_to_add_debugging_message_directly" time="0.002" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_not_log_debug_messages_when_log_level_is_info" time="0.0" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_know_if_its_loglevel_is_below_a_given_level" time="0.001" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_add_message_passed_as_block_when_using_add" time="0.0" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_convert_message_to_string_when_passed_in_block" time="0.001" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_not_evaluate_block_if_message_wont_be_logged" time="0.001" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_not_mutate_message" time="0.001" />
+  <testcase classname="./spec/lib/log4j_logger_spec.rb" name="Log4jLogger test_should_convert_message_to_string" time="0.001" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller action create should assign config_errors for display when create fails due to validation errors" time="0.153" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller action create should add new material" time="0.12" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller action edit should edit an existing material" time="0.088" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller action update should not fail when subject is nil, because of last material being deleted concurrently by another user" time="0.219" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller action update should assign config_errors for display when update fails due to validation errors" time="0.145" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller action update should update existing material" time="0.116" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller action new should load new material" time="0.035" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller routes should resolve and generate new" time="0.01" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller routes should resolve and generate delete" time="0.008" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller routes should resolve and generate create" time="0.008" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller routes should resolve and generate update" time="0.008" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::SvnController it should behave like material_controller routes should resolve and generate edit" time="0.008" />
+  <testcase classname="./spec/presenters/api_v1/stage_history_representer_spec.rb" name="ApiV1::StageHistoryRepresenter renders an stages with hal representation" time="0.031" />
+  <testcase classname="./spec/lib/config_update/save_as_pipeline_admin_spec.rb" name="ConfigUpdate::SaveAsPipelineAdmin should check if user can edit pipeline" time="0.005" />
+  <testcase classname="./spec/views/admin/server/index_html_spec.rb" name="admin/server/index.html.erb artifacts management should show artifacts section" time="0.3" />
+  <testcase classname="./spec/views/admin/server/index_html_spec.rb" name="admin/server/index.html.erb user management should have a text area for search bases" time="0.243" />
+  <testcase classname="./spec/views/admin/server/index_html_spec.rb" name="admin/server/index.html.erb email notification management should show all the email fields" time="0.336" />
+  <testcase classname="./spec/views/admin/server/index_html_spec.rb" name="admin/server/index.html.erb pipeline management should show hung job timeout options" time="0.276" />
+  <testcase classname="./spec/views/admin/server/index_html_spec.rb" name="admin/server/index.html.erb command repository management should show command repository cache reload button" time="0.239" />
+  <testcase classname="./spec/views/admin/server/index_html_spec.rb" name="admin/server/index.html.erb command repository management should show lookup command repository location field" time="0.236" />
+  <testcase classname="./spec/views/admin/server/index_html_spec.rb" name="admin/server/index.html.erb server management should show server management section" time="0.233" />
+  <testcase classname="./spec/helpers/api/feeds_helper_spec.rb" name="Api::FeedsHelper should return the url to pipeline resource given pipeline id" time="0.003" />
+  <testcase classname="./spec/models/material_history_api_model_spec.rb" name="MaterialHistoryAPIModel should initialize correctly should handle empty data" time="0.045" />
+  <testcase classname="./spec/models/material_history_api_model_spec.rb" name="MaterialHistoryAPIModel should initialize correctly should populate correct data" time="0.013" />
+  <testcase classname="./spec/views/pipelines/_pipeline_locking_blurb_html_spec.rb" name="/pipelines/_pipelines_locking_blurb.html.erb should show click to unlock when pipeline is lockable and it can be unlocked " time="0.071" />
+  <testcase classname="./spec/views/pipelines/_pipeline_locking_blurb_html_spec.rb" name="/pipelines/_pipelines_locking_blurb.html.erb should show locked when pipeline is lockable and a current instance running " time="0.053" />
+  <testcase classname="./spec/helpers/failures_helper_spec.rb" name="FailuresHelper fbh_details_link should enforce uniqueness of suite_name test_name combination" time="0.004" />
+  <testcase classname="./spec/helpers/failures_helper_spec.rb" name="FailuresHelper fbh_details_link should escape single quotes" time="0.002" />
+  <testcase classname="./spec/helpers/failures_helper_spec.rb" name="FailuresHelper fbh_details_link should render anchor and js for failed_test details" time="0.004" />
+  <testcase classname="./spec/helpers/failures_helper_spec.rb" name="FailuresHelper fbh_details_link should ensure uniqueness" time="0.003" />
+  <testcase classname="./spec/views/agents/index_json_spec.rb" name="/agents/index.json.erb should return json of partials" time="0.014" />
+  <testcase classname="./spec/views/comparison/stage_bar_without_controls_html_spec.rb" name="comparison/stage_bar_without_controls.html.erb should display PIM stage details" time="0.432" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController should return only the path to a pipeline api" time="0.02" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController history should render history json" time="0.28" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController history should render error correctly" time="0.034" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController history should route to history" time="0.025" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController unpause should pause the pipeline" time="0.03" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController unpause should resolve route to unpause" time="0.02" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController instance_by_counter should render instance json" time="0.145" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController instance_by_counter should render error correctly" time="0.024" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController instance_by_counter should route to instance_by_counter" time="0.02" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController status should render status json" time="0.079" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController status should render error correctly" time="0.026" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController status should route to history" time="0.019" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController pause should pause the pipeline" time="0.025" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController pause should resolve route to pause" time="0.022" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController card_activity should generate the route" time="0.018" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController card_activity should render error when there is an error" time="0.027" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController card_activity should return a list of cards between two pipelines" time="0.025" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController card_activity should generate the route with show_bisect" time="0.043" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController card_activity should resolve route to itself" time="0.018" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController card_activity should show_bisect when requested" time="0.024" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController pipelines should assign pipeline_configs and latest instance of each pipeline configured" time="0.152" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should return the url to the feed" time="0.021" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should render the error if there is any" time="0.174" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should return the url to the page given a stage locator" time="0.021" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should answer for /api/pipelines/foo/stages.xml" time="0.02" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should return 404 if the pipeline does not exist" time="0.151" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should set the stage feed from the java side" time="0.152" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should honor before if present" time="0.152" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should assign title" time="0.152" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should return stages url with before and after params" time="0.025" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should honor after if present" time="0.152" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController stage_feed should set content type as application/atom+xml" time="0.163" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController releaseLock should map /api/pipelines/:pipeline_name/releaseLock to :release_lock" time="0.019" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController releaseLock should call service and render operation result" time="0.128" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController pipeline_instance should respond with 404 when pipeline not found" time="0.026" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController pipeline_instance should respond with 401 when user does not have view permission" time="0.03" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController pipeline_instance should resolve url to action" time="0.018" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController pipeline_instance should load pipeline by id" time="0.151" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should return 404 when I try to trigger a pipeline that does not exist" time="0.099" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should support empty material_fingerprints" time="0.027" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should return 404 when material does not exist" time="0.099" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should answer for /api/pipelines/blahpipeline/schedule" time="0.02" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should support using schedule time environment variable values while scheduling a pipeline" time="0.03" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should be able to specify a particular revision from a upstream pipeline" time="0.029" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should respect materials name material map over originalMaterials" time="0.034" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should support using pipeline unique fingerprint to select material" time="0.042" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should support using schedule time environment variable values while scheduling a pipeline" time="0.054" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should fix empty revisions if necessary" time="0.027" />
+  <testcase classname="./spec/controllers/api/pipelines_controller_spec.rb" name="Api::PipelinesController schedule should return 202 when I trigger a pipeline successfully" time="0.027" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller action create should assign config_errors for display when create fails due to validation errors" time="0.076" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller action create should add new material" time="0.058" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller action edit should edit an existing material" time="0.039" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller action update should not fail when subject is nil, because of last material being deleted concurrently by another user" time="0.058" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller action update should assign config_errors for display when update fails due to validation errors" time="0.063" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller action update should update existing material" time="0.051" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller action new should load new material" time="0.032" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller routes should resolve and generate new" time="0.008" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller routes should resolve and generate delete" time="0.008" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller routes should resolve and generate create" time="0.007" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller routes should resolve and generate update" time="0.007" />
+  <testcase classname="./spec/controllers/admin/materials/material_controller_examples.rb" name="Admin::Materials::HgController it should behave like material_controller routes should resolve and generate edit" time="0.006" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should generate pipeline url when stage identifier is given" time="0.004" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should return false when config version matches" time="0.002" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should generate a stage tabl url for a given tab" time="0.003" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should generate pipeline url when stage identifier is given" time="0.003" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should return true when config version mismatches" time="0.002" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should understand if stage is dummy" time="0.001" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should understand if stage is the current stage" time="0.002" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should generate link with current tab css if this is the current tab" time="0.012" />
+  <testcase classname="./spec/helpers/stages_helper_spec.rb" name="StagesHelper should not generate link with current tab css if this is not the current tab" time="0.012" />
+  <testcase classname="./spec/views/admin/tasks/fetch/form_html_spec.rb" name="admin/tasks/fetch/new.html.erb should render a simple fetch task for create" time="1.667" />
+  <testcase classname="./spec/views/admin/tasks/fetch/form_html_spec.rb" name="admin/tasks/fetch/new.html.erb should render a simple fetch task for edit" time="1.775" />
+  <testcase classname="./spec/views/environments/environments_html_spec.rb" name="environments/_environments.html.erb with environments should yield for show hide script" time="3.958" />
+  <testcase classname="./spec/views/environments/environments_html_spec.rb" name="environments/_environments.html.erb with environments should show a message to add pipelines for an environment without pipelines" time="0.785" />
+  <testcase classname="./spec/views/environments/environments_html_spec.rb" name="environments/_environments.html.erb with environments should render environments using environment partial" time="0.373" />
+  <testcase classname="./spec/views/environments/environments_html_spec.rb" name="environments/_environments.html.erb with environments should have wrapping div for ajax refresh" time="3.378" />
+  <testcase classname="./spec/views/pipelines/index_json_spec.rb" name="/pipelines/index.json.erb should return json of partials" time="0.34" />
+  <testcase classname="./spec/views/pipelines/index_json_spec.rb" name="/pipelines/index.json.erb caching should cache pipeline partials of different pipelines separately" time="0.088" />
+  <testcase classname="./spec/views/admin/tasks/_on_cancel_html_spec.rb" name="admin/tasks/_on_cancel.html.erb should not display error message when the on cancel is a regular task like rake" time="0.084" />
+  <testcase classname="./spec/views/admin/tasks/_on_cancel_html_spec.rb" name="admin/tasks/_on_cancel.html.erb should not display plugin missing error message if pluggable on cancel task is not missing" time="0.059" />
+  <testcase classname="./spec/views/admin/tasks/_on_cancel_html_spec.rb" name="admin/tasks/_on_cancel.html.erb should display error message when the on cancel task plugin is missing" time="0.069" />
+  <testcase classname="./spec/lib/extensions/java_util_date_spec.rb" name="Java::JavaUtil::Date should format date for single digit dates as '07 Jul, 2010 at 07:03:04 [+0530]'" time="0.021" />
+  <testcase classname="./spec/lib/extensions/java_util_date_spec.rb" name="Java::JavaUtil::Date should convert date in UTC timezone" time="0.008" />
+  <testcase classname="./spec/lib/extensions/java_util_date_spec.rb" name="Java::JavaUtil::Date should format date as '20 Aug, 2010 at 18:03:44 [+0530]'" time="0.001" />
+  <testcase classname="./spec/views/admin/package_definitions/show_html_spec.rb" name="admin/package_definitions/show.html.erb should render package name and package configurations" time="0.514" />
+  <testcase classname="./spec/models/config_revision_api_model_spec.rb" name="ConfigRevisionAPIModel should initialize correctly should should handle empty data" time="0.007" />
+  <testcase classname="./spec/models/config_revision_api_model_spec.rb" name="ConfigRevisionAPIModel should initialize correctly should populate correct data" time="0.008" />
+  <testcase classname="./spec/views/admin/pipelines_snippet/edit_html_spec.rb" name="admin/pipelines_snippet/edit.html.erb should render global errrors" time="0.494" />
+  <testcase classname="./spec/views/admin/pipelines_snippet/edit_html_spec.rb" name="admin/pipelines_snippet/edit.html.erb should render the group xml" time="0.466" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController error_handling should handle InvalidAuthenticityToken by redirecting to root_url" time="0.012" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed should set the current user as @user on set_current_user" time="0.056" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed should not render_operation_result when result hasn't failed" time="0.037" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed should render_operation_result_if_failure" time="0.034" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed should set the current user entity id as @user_id on set_current_user" time="0.057" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed should set the current user entity id as nil on set_current_user when authentication is turned off" time="0.041" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed should get @user for current_user" time="0.032" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should cache the url based on options" time="1.562" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should contain flash message in the session upon redirect with empty params" time="1.551" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should cache the url based on params" time="1.479" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should cache the url based on params and options" time="1.507" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should contain flash message in the session upon redirect and forwards the params" time="1.485" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should cache the url based on values" time="1.62" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should cache the url based on protocol request reached on" time="1.597" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should not mistake pipeline_counter and stage_counter for caching" time="1.643" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should sort symbols after string" time="1.563" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should cache the url based on host_and_port request reached on" time="1.644" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed url cache should cache the url based on keys" time="1.544" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed local request recognition should recognize local request" time="0.035" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed requiring full path should cache the url if options is an active-record object" time="1.669" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed requiring full path should return full path when requested explicitly" time="1.523" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed requiring full path should use ssl base url from server config when requested" time="1.529" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController with license agent validity stubbed requiring full path should return only the path to a given resource and not the whole url" time="1.548" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController java_routes should generate cancel stage url" time="0.23" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController java_routes should generate run stage url" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load version_info_service" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load go config service" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load flash_message_service" time="0.012" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load viewRenderingService" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load material service" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load user_search_service" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load mingle_config_service" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load user_service" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should have task_view_service method available" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load xml_api_service" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load agent_service" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load dependency_material_service" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load pipeline stages feed service" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load shine_dao" time="0.006" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load failure_service" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load schedule_service" time="0.006" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load pipeline_history_service" time="0.025" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController services should load pipeline_lock_service" time="0.007" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController current_user_id_for_oauth for gadget rendering server should always return the current user even if it's anonymous" time="0.003" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController default_as_empty_list should always return true, because it needs to be used as a filter" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController default_as_empty_list should default given params as empty list only if not given" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController config MD5 stuff should understand loaded config-file md5" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController config MD5 stuff should get servlet request" time="0.005" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController config MD5 stuff should understand loaded config-file md5" time="0.003" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController do for every request should populate server-health-messages for every request" time="0.049" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController do for every request should set the siteUrl and secureSiteUrl on the thread" time="0.036" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController do for every request should populate the config file validity for every request" time="0.037" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController current_user_id for gadget rendering server should return the current user if not 'anonymous'" time="0.004" />
+  <testcase classname="./spec/controllers/application_controller_spec.rb" name="ApplicationController current_user_id for gadget rendering server should return nil if current user is 'anonymous'" time="0.004" />
+  <testcase classname="./spec/views/admin/package_repositories/edit_html_spec.rb" name="admin/package_repositories/edit.html.erb edit.html should have package repository listing panel" time="1.341" />
+  <testcase classname="./spec/views/admin/package_repositories/edit_html_spec.rb" name="admin/package_repositories/edit.html.erb edit.html should have ajax_form_submit_errors div" time="1.299" />
+  <testcase classname="./spec/views/admin/package_repositories/edit_html_spec.rb" name="admin/package_repositories/edit.html.erb edit.html should have add package repository form" time="1.406" />
+  <testcase classname="./spec/views/admin/package_repositories/edit_html_spec.rb" name="admin/package_repositories/edit.html.erb edit.html should have a page title and view title" time="1.311" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb should localize strings" time="3.672" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb fbh partial caching should use json to scope the key to format" time="2.207" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb fbh partial caching should cache fbh partial" time="9.295" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb with render mocked should auto refresh overview" time="0.131" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb with render mocked should auto refresh jobs" time="0.132" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb with render mocked should auto refresh pipeline" time="0.132" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb with render mocked should not autorefresh stage history for stats tab" time="0.124" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb with render mocked should not autorefresh stage history for pipeilnes tab" time="0.129" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb with render mocked should auto refresh materials" time="0.127" />
+  <testcase classname="./spec/views/stages/stage_json_spec.rb" name="stages/stage.json.erb with render mocked should auto refresh fbh" time="0.122" />
+  <testcase classname="./spec/views/environments/show_html_spec.rb" name="environments/show.html.erb should have an agents section listing all agents and an edit button" time="0.04" />
+  <testcase classname="./spec/views/environments/show_html_spec.rb" name="environments/show.html.erb should have a variables section listing all agents and an edit button" time="0.046" />
+  <testcase classname="./spec/views/environments/show_html_spec.rb" name="environments/show.html.erb should hookup every edit button to a modal box for editing" time="0.03" />
+  <testcase classname="./spec/views/environments/show_html_spec.rb" name="environments/show.html.erb should have a pipelines section listing all pipelines and an edit button" time="0.04" />
+  <testcase classname="./spec/lib/config_update/check_is_super_admin_spec.rb" name="ConfigUpdate::CheckIsSuperAdmin should return successful if user is an admin" time="0.004" />
+  <testcase classname="./spec/lib/config_update/check_is_super_admin_spec.rb" name="ConfigUpdate::CheckIsSuperAdmin should return unsuccessful result if user is not an admin" time="0.003" />
+  <testcase classname="./spec/lib/config_update/templates_template_subject_spec.rb" name="ConfigUpdate::TemplatesTemplateSubject should return template from template collection" time="0.003" />
+  <testcase classname="./spec/views/environments/edit_agents_html_spec.rb" name="environments/edit_agents.html.erb should have cruise_config_md5 as part of output" time="1.005" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController show logged in should return 404 when agent is not found" time="0.037" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController show logged in should get agents json" time="0.065" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController show security should disallow anonymous users, with security enabled" time="0.023" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController show security should allow normal users, with security enabled" time="0.023" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController show security should allow anyone, with security disabled" time="0.021" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController delete as admin user should return 200 when delete completes" time="0.062" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController delete as admin user should render result in case of error" time="0.027" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController delete security should disallow anonymous users, with security enabled" time="0.021" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController delete security should not allow normal users, with security enabled" time="0.021" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController delete security should allow anyone, with security disabled" time="0.022" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update as admin user should return agent json when agent name update is successful" time="0.036" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update as admin user should return 404 when agent is not found" time="0.026" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update as admin user should return agent json when agent resources update is successful by specifing a comma separated string" time="0.035" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update as admin user should return agent json when agent is enabled" time="0.035" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update as admin user should return agent json when agent is disabled" time="0.035" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update as admin user should return agent json when agent resources update is successful by specifying a resource array" time="0.037" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update as admin user should raise error when submitting a junk (non-blank) value for enabled boolean" time="0.032" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update security should disallow anonymous users, with security enabled" time="0.023" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update security should not allow normal users, with security enabled" time="0.022" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController update security should allow anyone, with security disabled" time="0.023" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController index logged in should get empty json when there are no agents" time="0.048" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController index logged in should get agents json" time="0.053" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController index security should disallow anonymous users, with security enabled" time="0.021" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController index security should allow normal users, with security enabled" time="0.021" />
+  <testcase classname="./spec/controllers/api_v1/agents_controller_spec.rb" name="ApiV1::AgentsController index security should allow anyone, with security disabled" time="0.019" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view timeline_view should generate comparison paths for 'to' pipeline" time="0.38" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view timeline_view should not render timeline page links when there is only one page" time="0.307" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view timeline_view should render timeline page links" time="0.344" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view timeline_view should render timeline view" time="0.309" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view show should load mingle config for given pipeline" time="40.281" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view show should render Checkins between the given pipeline instances" time="0.725" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view show should not fail if mingle not configured for given pipeline" time="0.623" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view show should render error page when user doesn't have view access to pipeline" time="0.52" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view show should show error if pipelines don't exist" time="0.514" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view show should render Card Activity and Checkins as tabs" time="0.595" />
+  <testcase classname="./spec/controllers/comparison_controller_view_spec.rb" name="ComparisonController view show should render errors when Checkins return an error" time="0.038" />
+  <testcase classname="./spec/lib/config_context_helper_spec.rb" name="Admin::ConfigContextHelper should create plugin params" time="0.001" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should contain details for a dependent pipeline" time="0.084" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should not add before if insertedAfter is null" time="0.063" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should contain stage details" time="0.076" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should escape invalid xml attributes" time="0.071" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should not add before if insertedBefore is null" time="0.068" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should escape invalid xml attributes for dependent materials as well" time="0.071" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should wrap fields with externaly fed data into ctags" time="0.085" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should have a self referencing link" time="0.063" />
+  <testcase classname="./spec/views/api/pipelines/pipeline_instance_xml_spec.rb" name="/api/pipelines/pipeline_instance should not add before if insertedbefore is null" time="0.068" />
+  <testcase classname="./spec/views/shared/_build_cause_popup_html_spec.rb" name="/shared/_build_cause_popup.html.erb should html escape all the user entered fields" time="0.357" />
+  <testcase classname="./spec/views/shared/_build_cause_popup_html_spec.rb" name="/shared/_build_cause_popup.html.erb should render user for display in build cause" time="0.337" />
+  <testcase classname="./spec/views/shared/_build_cause_popup_html_spec.rb" name="/shared/_build_cause_popup.html.erb should not display modified files if the flag is not set" time="0.412" />
+  <testcase classname="./spec/views/shared/_build_cause_popup_html_spec.rb" name="/shared/_build_cause_popup.html.erb package_materials should render comment as not provided if publisher url is empty for package in build cause popup" time="0.364" />
+  <testcase classname="./spec/views/shared/_build_cause_popup_html_spec.rb" name="/shared/_build_cause_popup.html.erb package_materials should render comment for package in build cause popup" time="0.339" />
+  <testcase classname="./spec/lib/config_update/node_as_updated_node_spec.rb" name="ConfigUpdate::NodeAsUpdatedNode should return node as updated node" time="0.002" />
+  <testcase classname="./spec/models/agent_api_model_spec.rb" name="AgentAPIModel should convert to json correctly should have all fields correctly" time="0.012" />
+  <testcase classname="./spec/models/agent_api_model_spec.rb" name="AgentAPIModel should initialize correctly should handle empty data" time="0.01" />
+  <testcase classname="./spec/models/agent_api_model_spec.rb" name="AgentAPIModel should initialize correctly should populate correct data" time="0.01" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions new should render form for addition of package repository" time="0.058" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions destroy should render error when repository can not be deleted" time="0.154" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions destroy should delete repository successfully" time="0.039" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions list should render page for package repository list" time="0.041" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions config should get the configuration properties with values for a given repo-id associated with package material plugin" time="0.033" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions config should get the configuration properties for a given plugin-id" time="0.033" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions create should not add flash message when create fails" time="0.034" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions create should save package repository form" time="0.031" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions edit should render error if plugin is missing package repository" time="0.041" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions edit should render 404 page when repo is missing" time="0.06" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions edit should render form for editing  package repository" time="0.044" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions update should not add flash message when update fails" time="0.029" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions update should update package repository form" time="0.032" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions check connection should show error when check connection fails for given package repository" time="0.026" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController actions check connection should check connection for given package repository" time="0.026" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to the new package-repositories page" time="0.007" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should allow dots in the name of a plugin in the route for a plugin config for a repository" time="0.006" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to the list package-repositories page" time="0.005" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to the create package-repositories page" time="0.005" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should allow dots in the name of a plugin in the route for a plugin's configuration" time="0.007" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to the edit package-repositories page" time="0.006" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to plugin config for repo" time="0.006" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to check connection for repo" time="0.005" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to deletion of repo" time="0.006" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to plugin config" time="0.006" />
+  <testcase classname="./spec/controllers/admin/package_repositories_controller_spec.rb" name="Admin::PackageRepositoriesController routes should resolve route to the update package-repositories page" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/nonpluggable_task_with_pluggable_on_cancel_task_controller_spec.rb" name="Admin::TasksController actions update should perform plugin validation before updating a pluggable task" time="0.112" />
+  <testcase classname="./spec/controllers/admin/tasks/nonpluggable_task_with_pluggable_on_cancel_task_controller_spec.rb" name="Admin::TasksController actions create should perform plugin validation before creating a pluggable task" time="0.101" />
+  <testcase classname="./spec/presenters/api_v1/backup_representer_spec.rb" name="ApiV1::BackupRepresenter renders a ServerBackup" time="0.013" />
+  <testcase classname="./spec/presenters/api_v1/dashboard/pipeline_representer_spec.rb" name="ApiV1::Dashboard::PipelineRepresenter renders all pipeline groups with hal representation" time="0.138" />
+  <testcase classname="./spec/presenters/api_v2/agent_representer_spec.rb" name="ApiV2::AgentRepresenter renders agent state correctly" time="0.029" />
+  <testcase classname="./spec/presenters/api_v2/agent_representer_spec.rb" name="ApiV2::AgentRepresenter renders build state correctly" time="0.027" />
+  <testcase classname="./spec/presenters/api_v2/agent_representer_spec.rb" name="ApiV2::AgentRepresenter renders config state correctly" time="0.025" />
+  <testcase classname="./spec/presenters/api_v2/agent_representer_spec.rb" name="ApiV2::AgentRepresenter renders an agent with hal representation" time="0.009" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display the list of all the templates and the pipelines in it" time="0.553" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display that there are pipelines using this template but not show pipelines if user is template admin" time="0.342" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display a link to create a new template when running enterprise mode" time="0.025" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should not display a link to create a new template when running enterprise mode for a template admin" time="0.025" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display a delete button next to the template name if user is both template admin and super admin" time="0.401" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display an edit button next to the template name" time="0.398" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display a edit permissions link next to the template name" time="0.534" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display a link to create a new template when running enterprise mode if user is both template admin and super admin" time="0.024" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should disable the delete button next to the template name for template admin" time="0.35" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display the list of all the templates and the pipelines in it if user is both template admin and super admin" time="0.444" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display a message when there are no templates configured" time="0.026" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should enable the edit permissions link next to the template name if user is both template admin and super admin" time="0.342" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display a link to create a new template when running enterprise mode with templates already configured" time="0.38" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should display a delete button next to the template name" time="0.409" />
+  <testcase classname="./spec/views/admin/templates/index_html_spec.rb" name="admin/templates/index.html.erb should disable the edit permissions link next to the template name for template admin and not super admin" time="0.339" />
+  <testcase classname="./spec/views/admin/tasks/pluggable_task/edit_html_spec.rb" name="admin/tasks/plugin/edit.html.erb should render plugin template and data for existing pluggable task" time="1.656" />
+  <testcase classname="./spec/views/pipelines/_pipelines_selector_pipelines_html_spec.rb" name="/pipelines/_pipeline_selector_pipelines.html.erb /pipelines/pipeline_selector_pipelines.html.erb should check checkboxes that are selected" time="0.159" />
+  <testcase classname="./spec/views/pipelines/_pipelines_selector_pipelines_html_spec.rb" name="/pipelines/_pipeline_selector_pipelines.html.erb /pipelines/pipeline_selector_pipelines.html.erb should render checkboxes for all groups and pipelines" time="0.265" />
+  <testcase classname="./spec/views/navigation_elements/_footer_html_spec.rb" name="/navigation_elements/_footer should have miscellaneous footer links" time="0.093" />
+  <testcase classname="./spec/views/navigation_elements/_footer_html_spec.rb" name="/navigation_elements/_footer should have copyright, license and third-party information in the footer" time="0.066" />
+  <testcase classname="./spec/views/admin/pipeline_groups/possible_groups_popup_spec.rb" name="possible_groups_popup should display conflict message on md5 mismatch" time="0.067" />
+  <testcase classname="./spec/views/admin/pipeline_groups/possible_groups_popup_spec.rb" name="possible_groups_popup should render all the groups as a list" time="0.057" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should show stages" time="0.3" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should render templates dropdown always along with a edit link" time="0.193" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should not render error div when no error exists" time="0.168" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should not render templates dropdown when stage parent is templates" time="0.107" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should display move stage up button" time="0.23" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should not render template dropdown and options when there are no templates. Should display relevant message" time="0.184" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should disable the delete button if there is only 1 stage" time="0.102" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should disable the delete button if a stage is used as a material" time="0.173" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should disable the move stage down button for the last stage" time="0.181" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should display stages of templated pipeline with trigger type when template is selected" time="0.11" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should render switch to template form with prompt on save pipeline" time="0.169" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should display view template button when stage configuration uses templates" time="0.18" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should submit a form on deletion and prompt on deletion" time="0.173" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should display move stage down button" time="0.246" />
+  <testcase classname="./spec/views/admin/stages/index_html_spec.rb" name="admin/stages/index.html.erb should disable the move stage up button for the first stage" time="0.179" />
+  <testcase classname="./spec/helpers/admin/admin_helper_spec.rb" name="Admin::AdminHelper should return true when postgresql is used" time="0.005" />
+  <testcase classname="./spec/helpers/admin/admin_helper_spec.rb" name="Admin::AdminHelper should return false when postgresql is not used" time="0.004" />
+  <testcase classname="./spec/helpers/admin/admin_helper_spec.rb" name="Admin::AdminHelper should return template's first stage" time="0.002" />
+  <testcase classname="./spec/views/admin/pipeline_groups/edit_html_spec.rb" name="admin/pipeline_groups/edit.html.erb should render permissions grid for users and roles" time="0.941" />
+  <testcase classname="./spec/views/admin/pipeline_groups/edit_html_spec.rb" name="admin/pipeline_groups/edit.html.erb should have tooltips on view, operate and admin checkboxes" time="0.945" />
+  <testcase classname="./spec/views/admin/pipeline_groups/edit_html_spec.rb" name="admin/pipeline_groups/edit.html.erb should render pipeline group edit form" time="1.002" />
+  <testcase classname="./spec/views/admin/jobs/artifacts_html_spec.rb" name="admin/jobs/artifacts.html.erb should have a heading as Artifacts with a title tooltip" time="0.608" />
+  <testcase classname="./spec/views/admin/jobs/artifacts_html_spec.rb" name="admin/jobs/artifacts.html.erb should have a headings for source and destination with a title tooltip" time="0.513" />
+  <testcase classname="./spec/views/admin/jobs/artifacts_html_spec.rb" name="admin/jobs/artifacts.html.erb should include a hidden field used to find out when all the artifacts are deleted" time="0.47" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb should show the headers for a materials table" time="0.303" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb should have new material warning div when scm material does not have dest set" time="0.053" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb should show can delete material icon with title" time="0.299" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb should show cannot delete material icon with title when there is only one material" time="0.043" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb should show cannot delete material icon with title when it is used in a fetch artifact task" time="0.233" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb should show cannot delete material icon with title when it is used in a label template" time="0.238" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb should not have new material warning div when scm material has dest set" time="0.041" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb package_material should list package material in the add new material dropdown" time="0.233" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb pluggable_scm_material should display material name in the listing with the link to edit for pluggable SCM material" time="0.294" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb pluggable_scm_material should list pluggable SCM material in the add new material dropdown" time="0.23" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb material name in the listing with the link to edit should display material name in the listing with the link to edit for package material" time="0.226" />
+  <testcase classname="./spec/views/admin/materials/index_html_spec.rb" name="admin/materials/index.html.erb material name in the listing with the link to edit should display material name in the listing with the link to edit for svn" time="0.222" />
+  <testcase classname="./spec/models/top_level_form_name_provider_spec.rb" name="TopLevelFormNameProvider should generate correct attribute names" time="0.001" />
+  <testcase classname="./spec/models/top_level_form_name_provider_spec.rb" name="TopLevelFormNameProvider should give the base name of the form" time="0.0" />
+  <testcase classname="./spec/models/top_level_form_name_provider_spec.rb" name="TopLevelFormNameProvider should generate correct collection names" time="0.001" />
+  <testcase classname="./spec/models/top_level_form_name_provider_spec.rb" name="TopLevelFormNameProvider should generate correct collection names" time="0.001" />
+  <testcase classname="./spec/models/top_level_form_name_provider_spec.rb" name="TopLevelFormNameProvider should generate css id for given element" time="0.001" />
+  <testcase classname="./spec/presenters/api_v1/config/timer_representer_spec.rb" name="ApiV1::Config::TimerRepresenter should represent validation errors" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/timer_representer_spec.rb" name="ApiV1::Config::TimerRepresenter should deserialize" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/timer_representer_spec.rb" name="ApiV1::Config::TimerRepresenter should represent a timer" time="0.002" />
+  <testcase classname="./spec/controllers/api/internal/pluggable_task_controller_spec.rb" name="Api::Internal::PluggableTaskController GET 'validate' returns http success" time="0.002" />
+  <testcase classname="./spec/views/server/_messages_body_html_spec.rb" name="/server/messages_body.html.erb should not render errors when there are none" time="0.069" />
+  <testcase classname="./spec/views/server/_messages_body_html_spec.rb" name="/server/messages_body.html.erb should not render errors or warnings when there are none" time="0.055" />
+  <testcase classname="./spec/views/server/_messages_body_html_spec.rb" name="/server/messages_body.html.erb should not render warnings when there are no warnings" time="0.062" />
+  <testcase classname="./spec/views/server/_messages_body_html_spec.rb" name="/server/messages_body.html.erb should render errors and warnings on a page" time="0.066" />
+  <testcase classname="./spec/views/admin/jobs/tabs_html_spec.rb" name="admin/jobs/tabs.html.erb should populate env vars for the pipeline" time="0.226" />
+  <testcase classname="./spec/views/shared/_subheader_html_spec.rb" name="/shared/_subheader.html.erb should display pipeline selector (personalize)" time="0.054" />
+  <testcase classname="./spec/views/shared/_subheader_html_spec.rb" name="/shared/_subheader.html.erb should display add environments link" time="0.097" />
+  <testcase classname="./spec/views/shared/_subheader_html_spec.rb" name="/shared/_subheader.html.erb should display title" time="0.052" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter should map errors" time="0.012" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert basic hash to Job" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert attribute run_instance_count with value `nil` to Job" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert attribute timeout with value `never` to Job with timeout `0`" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert attribute timeout with value `nil` to Job with timeout `nil`" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert basic hash with tabs to Job" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert basic hash with properties to Job" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert basic hash with resources to Job" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert attribute timeout with integer value `10` to Job with timeout `10`" time="0.005" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should  raise exception when invalid task type is passed" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert attribute run_instance_count with value `all` to Job" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert attribute run_instance_count with integer value `nil` to Job" time="0.006" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should raise exception when invalid artifact type is passed" time="0.003" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert basic hash with environment variable to Job" time="0.004" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert basic hash with task to Job" time="0.004" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter deserialize should convert basic hash with artifact to Job" time="0.004" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter serialize should render job with hal representation" time="0.013" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter serialize should serialize timeout with value `0` to `never`" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter serialize should serialize run_instance_count with value set to 10" time="0.013" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter serialize should serialize run_instance_count with value `all` when runOnAllAgents is true" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter serialize should serialize run_instance_count with value `nil` when runOnAllAgents is false and eunInstanceCount is unset" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter serialize should serialize timeout with value set to `10` to `10`" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/job_representer_spec.rb" name="ApiV1::Config::JobRepresenter serialize should serialize timeout with value `nil` to `default`" time="0.002" />
+  <testcase classname="./spec/views/layouts/agent_detail_html_spec.rb" name="/layouts/agent_detail header should show agent name" time="1.09" />
+  <testcase classname="./spec/views/layouts/agent_detail_html_spec.rb" name="/layouts/agent_detail header should set the page title" time="1.148" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController index should populate the tab name" time="0.048" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController index should populate available disk space on artifact directory" time="0.038" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController index should populate the backup location" time="0.032" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController index should populate the last backup time" time="0.036" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController index should populate the user that triggered the last backup" time="0.033" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController perform_backup should return error if the backup has failed" time="0.014" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController perform_backup should return success if the backup is successful" time="0.013" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController routes should resolve the route for the server backup" time="0.005" />
+  <testcase classname="./spec/controllers/admin/backup_controller_spec.rb" name="Admin::BackupController routes should resolve the route to the backup admin ui page" time="0.005" />
+  <testcase classname="./spec/views/admin/pipelines/general_html_spec.rb" name="admin/pipelines/general.html.erb should render new form" time="0.245" />
+  <testcase classname="./spec/views/admin/pipelines/general_html_spec.rb" name="admin/pipelines/general.html.erb should render errors" time="0.294" />
+  <testcase classname="./spec/views/admin/pipelines/general_html_spec.rb" name="admin/pipelines/general.html.erb should render form with approval type auto of the first stage" time="0.208" />
+  <testcase classname="./spec/views/admin/pipelines/general_html_spec.rb" name="admin/pipelines/general.html.erb should render form with approval type manual of the first stage" time="0.211" />
+  <testcase classname="./spec/views/admin/pipelines/general_html_spec.rb" name="admin/pipelines/general.html.erb should render form with approval type as disabled if pipeline refers to a template" time="0.211" />
+  <testcase classname="./spec/views/api/stages/index_xml_spec.rb" name="/api/stages should have a self referncing link" time="0.059" />
+  <testcase classname="./spec/views/api/stages/index_xml_spec.rb" name="/api/stages should escape xml sensitive characters" time="0.093" />
+  <testcase classname="./spec/views/api/stages/index_xml_spec.rb" name="/api/stages should contain stage details" time="0.063" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should show title" time="0.136" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should show compare link against each run" time="0.258" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should show compare link even if pipeline is a bisect" time="0.29" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should show current page" time="0.185" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should show config changed as a link to open diff only for admin user" time="0.175" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should not show config changed as a link when config has not changed between top of this page and bottom of previous page" time="0.136" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should wrap long pipeline labels" time="0.165" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should wireup page change handlers" time="0.146" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should divide stage history instances when config has changed and show plain text indication for non-admins" time="0.196" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should not show next link if next is nil" time="0.146" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should mark stages having job-rerun differently" time="0.271" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should show config changed as a link when config has changed between top of this page and bottom of previous page" time="0.126" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should show the current stage as the first" time="0.163" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should not divide stage history instances when config has not changed" time="0.13" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should not show config changed as a link when the stage does not have corresponding md5 associated with it" time="0.145" />
+  <testcase classname="./spec/views/stages/_stage_history_html_spec.rb" name="_stage_history.html.erb should render stage links" time="0.245" />
+  <testcase classname="./spec/models/pipeline_history_api_model_spec.rb" name="PipelineHistoryAPIModel should initialize correctly should handle empty data" time="0.058" />
+  <testcase classname="./spec/models/pipeline_history_api_model_spec.rb" name="PipelineHistoryAPIModel should initialize correctly should populate correct data" time="0.058" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController index should get agents json" time="0.035" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController index should get empty json when there are no agents" time="0.029" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController index should resolve to list agents" time="0.019" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController job_run_history should render job run history json" time="0.112" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController job_run_history should resolve routes" time="0.02" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController edit_agents should resolve routes" time="0.017" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController edit_agents should show error if no agents are selected" time="0.025" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController edit_agents should show error if selected parameter is omitted" time="0.022" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController edit_agents should show message if there is a problem" time="0.024" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController edit_agents should show message for a successful bulk_edit" time="0.03" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController edit_agents should show message for an unrecognised operation" time="0.022" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController delete should resolve as /api/agents/UUID/delete" time="0.017" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController delete should render result" time="0.023" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController disable should resolve as /api/agents/UUID/disable" time="0.017" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController disable should render result" time="0.023" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController enable should resolve as /api/agents/UUID/enable" time="0.017" />
+  <testcase classname="./spec/controllers/api/agents_controller_spec.rb" name="Api::AgentsController enable should render result" time="0.023" />
+  <testcase classname="./spec/presenters/api_v1/config/artifact_representer_spec.rb" name="ApiV1::Config::ArtifactRepresenter should serialize test artifact" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/artifact_representer_spec.rb" name="ApiV1::Config::ArtifactRepresenter should deserialize test artifact" time="0.001" />
+  <testcase classname="./spec/presenters/api_v1/config/artifact_representer_spec.rb" name="ApiV1::Config::ArtifactRepresenter should map errors" time="0.002" />
+  <testcase classname="./spec/presenters/api_v1/config/artifact_representer_spec.rb" name="ApiV1::Config::ArtifactRepresenter should serialize build artifact" time="0.002" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation destroy should delete a given task from a job in template" time="0.064" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation destroy should delete a given task from a job" time="0.055" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation create should assign config_errors for display when update fails due to validation errors" time="0.087" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation create should create a task" time="0.07" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation edit should handle for a task" time="0.048" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation update should update a given task with on cancel" time="0.065" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation update should assign config_errors for display when update fails due to validation errors" time="0.081" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation update should update a given task" time="0.108" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller action implementation new should create a new task" time="0.046" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes index should resolve" time="0.008" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes index should generate" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes index should resolve templates as :stage_parent" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes create should generate" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes create should resolve" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes increment_index should generate" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes increment_index should resolve" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes decrement_index should generate" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes decrement_index should resolve" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes edit should generate" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes edit should only accept numerical task_index(s)" time="0.008" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes edit should resolve" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes delete should generate" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes delete should only accept numerical task_index(s)" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes delete should resolve" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes update should generate" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes update should resolve" time="0.007" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes new should generate" time="0.006" />
+  <testcase classname="./spec/controllers/admin/tasks/task_controller_examples.rb" name="Admin::TasksController it should behave like task_controller routes new should resolve" time="0.007" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions resource should return all resources starting with given query string" time="0.025" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions os should return all agent operating systems starting with a given query string" time="0.023" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions os should return all agent operating systems" time="0.017" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions ip should return all agent ip addresses starting with a given query string" time="0.016" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions ip should return all agent ip addresses" time="0.015" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions status should return agent status starting with given query string" time="0.015" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions status should return case insensitive status starting with given query string" time="0.015" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions status should return all types of agent status" time="0.015" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions environment should return all environments starting with a query string" time="0.018" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions environment should return all environments" time="0.015" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions name should return all unique agent hostnames starting with given query string" time="0.015" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController actions name should return all unique agent hostnames" time="0.015" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController routes should accept only the defined actions" time="0.004" />
+  <testcase classname="./spec/controllers/agent_autocomplete_controller_spec.rb" name="AgentAutocompleteController routes should resolve the path" time="0.006" />
+  <testcase classname="./spec/views/admin/materials/pluggable_scm/new_html_spec.rb" name="admin/materials/pluggable_scm/new.html.erb should render the config md5, form buttons and flash message" time="0.526" />
+  <testcase classname="./spec/views/admin/materials/pluggable_scm/new_html_spec.rb" name="admin/materials/pluggable_scm/new.html.erb should display new pluggable SCM material view with errors" time="0.469" />
+  <testcase classname="./spec/views/admin/materials/pluggable_scm/new_html_spec.rb" name="admin/materials/pluggable_scm/new.html.erb should render plugin template and data for a new pluggable SCM" time="0.518" />
+  <testcase classname="./spec/views/admin/materials/pluggable_scm/new_html_spec.rb" name="admin/materials/pluggable_scm/new.html.erb should render the config conflict message" time="0.46" />
+  <testcase classname="./spec/views/admin/materials/pluggable_scm/new_html_spec.rb" name="admin/materials/pluggable_scm/new.html.erb should render the required message" time="0.457" />
+  <testcase classname="./spec/views/admin/materials/pluggable_scm/new_html_spec.rb" name="admin/materials/pluggable_scm/new.html.erb should render name, check-connection, auto-update, destination &amp; filter" time="0.558" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action index should assign jobs" time="0.059" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action create should be able to create a job with a pluggable task" time="0.073" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action create should load jobs page with resource when creation fails" time="0.075" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action create should validate pluggable tasks before create" time="0.081" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action create should create a new job" time="1.39" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action create should show error message when config save fails for reasons other than validations" time="0.144" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should update job name and redirect to the new job" time="0.05" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should populate an empty artifactPlans when params is nil" time="0.062" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should not redirect when update fails" time="0.076" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should load resources for autocomplete even when update fails" time="0.061" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should update resources" time="0.049" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should not load new config on save failure (validation / merge conflict)" time="0.062" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should update environment variables" time="0.052" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should update custom tabs" time="0.05" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action update should clear environment variables" time="0.047" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action new should render a new job" time="0.039" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action delete should load jobs back when delete fails" time="0.082" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action delete should delete the given job" time="0.05" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action edit should render error page if job does not exist" time="0.047" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController action edit should load job" time="0.046" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController routes should resolve new" time="0.012" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController routes should generate route for tabs" time="0.01" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController routes should generate destroy" time="0.005" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController routes should resolve create" time="0.009" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController routes should resolve destroy" time="0.006" />
+  <testcase classname="./spec/controllers/admin/jobs_controller_spec.rb" name="Admin::JobsController routes should generate index" time="0.008" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action index should populate all the templates and the associated pipelines" time="0.098" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action new should create an empty template when pipelineToExtractFrom is set" time="0.048" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action new should create an empty template" time="0.032" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action edit should assign template with name" time="0.049" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action edit_permissions should assign users for autocomplete" time="0.048" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action edit_permissions should set tab name to templates" time="0.102" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action edit_permissions should assign template" time="0.073" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action update_permissions should assign users for autocomplete on error" time="0.085" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action update_permissions should update permissions for template successfully" time="0.055" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action destroy should return error if there are dependent pipelines for the template" time="0.027" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action destroy should delete a template" time="0.05" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action create should extract a new template from a pipeline config" time="0.082" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action create should modify pipeline defintion to use template when a template is extracted" time="0.062" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action create should assign config_errors for display when template throws error" time="0.08" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController action create should create a new template given a name" time="0.063" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve route to the templates listing page" time="0.008" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve &amp; generate route for update permissions" time="0.01" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should generate listing route" time="0.005" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve route to the template delete" time="0.009" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve &amp; generate route for edit permissions" time="0.01" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve &amp; generate route to the template edit" time="0.051" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve &amp; generate route to the template update" time="0.016" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve &amp; generate route for new" time="0.015" />
+  <testcase classname="./spec/controllers/admin/templates_controller_spec.rb" name="Admin::TemplatesController routes should resolve &amp; generate route for create" time="0.013" />
+  <testcase classname="./spec/views/admin/configuration/edit_html_spec.rb" name="admin/configuration/edit.html.erb should render edit" time="0.267" />
+  <testcase classname="./spec/views/admin/configuration/edit_html_spec.rb" name="admin/configuration/edit.html.erb should show global errors in case of config save failure" time="0.19" />
+  <testcase classname="./spec/views/admin/configuration/edit_html_spec.rb" name="admin/configuration/edit.html.erb should render heading" time="0.187" />
+</testsuite>
